@@ -5,6 +5,7 @@ import { Grid, Image } from 'semantic-ui-react';
 class Landing extends React.Component {
   render() {
     return (
+        <div className="Beas">
         <Grid verticalAlign='middle' textAlign='center' container>
 
           <Grid.Column width={4}>
@@ -17,6 +18,7 @@ class Landing extends React.Component {
           </Grid.Column>
 
         </Grid>
+        </div>
     );
   }
 }
