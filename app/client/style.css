@@ -1,4 +1,4 @@
 .Beas {
-  background-image: '/images/bap.jpeg';
+  background-image: url('/images/bap.jpeg');
   background-size: cover;
 }
