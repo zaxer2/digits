@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader, Card } from 'semantic-ui-react';
+import { Container, Header, Loader, Card } from 'semantic-ui-react';
 import { Contacts } from '/imports/api/contact/contact';
 import ContactAdmin from '/imports/ui/components/ContactAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -8,8 +8,6 @@ import PropTypes from 'prop-types';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListStuff extends React.Component {
-
-
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {

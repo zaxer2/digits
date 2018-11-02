@@ -1,12 +1,10 @@
 
 import React from 'react';
 import { Notes, NoteSchema } from '/imports/api/note/note';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import LongTextField from 'uniforms-semantic/LongTextField';
 import { Bert } from 'meteor/themeteorchef:bert';
-import { Meteor } from 'meteor/meteor';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import HiddenField from 'uniforms-semantic/HiddenField';

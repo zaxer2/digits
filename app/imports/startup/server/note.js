@@ -2,12 +2,6 @@ import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Notes } from '../../api/note/note';
 
-/** Initialize the database with a default data document. */
-function addData(data) {
-  console.log(`  Adding: ${data.lastName} (${data.owner})`);
-  Notes.insert(data);
-}
-
 /** Initialize the collection if empty. */
 if (Notes.find().count() === 0) {
   if (Meteor.settings.defaultContacts) {

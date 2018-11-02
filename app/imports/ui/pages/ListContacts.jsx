@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader, Card } from 'semantic-ui-react';
+import { Container, Header, Loader, Card } from 'semantic-ui-react';
 import { Contacts } from '/imports/api/contact/contact';
 import { Notes } from '/imports/api/note/note';
 import Contact from '/imports/ui/components/Contact';
@@ -22,7 +22,8 @@ class ListContacts extends React.Component {
         <Container>
           <Header as="h2" textAlign="center" inverted>List Contacts</Header>
           <Card.Group>
-            {this.props.contacts.map((contact, index) => <Contact key={index} contact={contact} notes={this.props.notes.filter(note => (note.contactId === contact._id))}/>)}
+            {this.props.contacts.map((contact, index) => <Contact key={index} contact={contact}
+notes={this.props.notes.filter(note => (note.contactId === contact._id))}/>)}
           </Card.Group>
         </Container>
     );
